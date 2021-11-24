@@ -1,16 +1,19 @@
 body{
   margin:0;
 }
-
+:root{
+--primary-clr:#04724d;
+--secondary-clr:#293241;
+}
 header{
 height: 100vh;
 width: 100vw;
-background-image: url(/Images/symbol-scatter-haikei.svg);
+background-image: url(/Images/circle-scatter-haikei.svg);
 display: grid;
 justify-content: center;
 background-size: 150%;
 background-position-y: -40rem;
-animation: bg-animate 10s infinite; 
+animation: bg-animate 20s infinite alternate; 
 }
 @keyframes bg-animate {
   0%{
@@ -23,6 +26,6 @@ animation: bg-animate 10s infinite;
 
 h1{
   margin: 0;
-  color: white;
+  color: var(--primary-clr);
   font-size: 5rem;
 }
